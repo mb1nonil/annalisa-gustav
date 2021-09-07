@@ -1,89 +1,230 @@
-<!doctype html>
-<html lang="en">
+
+
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <title>Anna-lisa och Gustav ska gifta sig</title>
+    <title>Title of the document</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/starter-template/">
-
-    
-
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib1.css">
+    <link rel="stylesheet" href="lib2.css">
   </head>
+  
   <body>
-    
-<div class="col-lg-8 mx-auto p-3 py-md-5">
-  <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
-    <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
-      <span class="fs-4">Starter template</span>
-    </a>
-  </header>
-
-  <main>
-    <h1>Get started with Bootstrap</h1>
-    <p class="fs-5 col-md-8">Quickly and easily get started with Bootstrap's compiled, production-ready files with this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.</p>
-
-    <div class="mb-5">
-      <a href="../examples/" class="btn btn-primary btn-lg px-4">Download examples</a>
-    </div>
-
-    <hr class="col-3 col-md-2 mb-5">
-
-    <div class="row g-5">
-      <div class="col-md-6">
-        <h2>Starter projects</h2>
-        <p>Ready to beyond the starter template? Check out these open source projects that you can quickly duplicate to a new GitHub repository.</p>
-        <ul class="icon-list">
-          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
-          <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
-        </ul>
-      </div>
-
-      <div class="col-md-6">
-        <h2>Guides</h2>
-        <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
-        <ul class="icon-list">
-          <li><a href="../getting-started/introduction/">Bootstrap quick start guide</a></li>
-          <li><a href="../getting-started/webpack/">Bootstrap Webpack guide</a></li>
-          <li><a href="../getting-started/parcel/">Bootstrap Parcel guide</a></li>
-          <li><a href="../getting-started/contribute/">Contributing to Bootstrap</a></li>
-        </ul>
-      </div>
-    </div>
-  </main>
-  <footer class="pt-5 my-5 text-muted border-top">
-    Created by the Bootstrap team &middot; &copy; 2021
-  </footer>
+<div id="public-wrapper">
+  <div class="website-title__cart noMobile"></div>
+  <div>
+     <div style="padding-bottom: 91px;"></div>
+     <div class="sticky-nav sticky" style="transform: translateZ(0px); position: fixed; top: 0px; left: 0px; width: 1903px; z-index: 100;">
+        <header id="public-page-header" class="clearfix">
+           <div id="public-page-details" class="top-row hidden-xs hidden-sm isHidden">
+              <h5 class="wedding-date">June 8, 2022</h5>
+              <h5 class="wedding-location">Alunda</h5>
+              <h5 class="hashtag">#AnnalisaOchGustav2022</h5>
+           </div>
+           <div class="col-xs-12 website-title">
+              <h1 id="public-page-title" class="hidden visible-md visible-lg isHidden"><a href="/wedding/sample-woads-white">Anna-lisa &amp; Gustav</a></h1>
+              <div class="visible-sm visible-xs">
+                 <div class="nav-control zolaicon-public zolaicon-public-hamburger-menu" role="button"></div>
+              </div>
+              <div class="pages-nav-container ">
+                 <div class="nav-container clearfix">
+                    <ul class="list-inline">
+                       <li><a href="/wedding/sample-woads-white" class="active">Home</a></li>
+                       <li><a href="/wedding/sample-woads-white/event">Schedule</a></li>
+                       <li><a href="/wedding/sample-woads-white/travel">Travel &amp; Accommodations</a></li>
+                       <li><a href="/wedding/sample-woads-white/registry">Registry</a></li>
+                       <li><a href="/wedding/sample-woads-white/wedding_party">Wedding Party</a></li>
+                       <li><a href="/wedding/sample-woads-white/photo">Photos</a></li>
+                       <li><a href="/wedding/sample-woads-white/poi">Things To Do</a></li>
+                       <li><a href="/wedding/sample-woads-white/faq">FAQs</a></li>
+                       <li><a href="/wedding/sample-woads-white/rsvp">RSVP</a></li>
+                    </ul>
+                 </div>
+              </div>
+              <h1 class="hidden visible-xs visible-sm"><a href="/wedding/sample-woads-white">Anna-lisa &amp; Gustav</a></h1>
+              <div class="website-title__cart hidden-md hidden-lg"></div>
+           </div>
+        </header>
+     </div>
+  </div>
+  <div id="public-page-content-wrapper" class="show-page">
+     <div>
+        <div class="public-page offset-background-image">
+           <div>
+              <div class="hero-wrapper">
+                 <div class="jumbotron home-page-hero no-image">
+                    <div class="hero-accent-top-left"></div>
+                    <div class="hero-accent-top-right"></div>
+                    <div class="hero-accent-bottom-left"></div>
+                    <div class="hero-accent-bottom-right"></div>
+                    <div class="homepage-header-text">
+                       <h1>Vi ska gifta oss!</h1>
+                    </div>
+                    <div class="down-arrow"><i class="zolaicon-public zolaicon-public-chevron-down" role="button"></i></div>
+                 </div>
+              </div>
+              <div class="page-content has-entities no-image-above has-welcome-message">
+                 <div class="page-accent-top-left"></div>
+                 <div class="page-accent-top-right"></div>
+                 <div class="page-accent-bottom-left"></div>
+                 <div class="page-accent-bottom-right"></div>
+                 <div class="homepage-seal top-seal">
+                    <div class="seal-section"><span class="name-1"><span class="initial-1">A</span><span class="initial-2">P</span></span><span><span class="amp">&amp;</span>
+                      <span class="and">och</span><span class="plus">+</span></span><span class="name-2"><span class="initial-1">G</span>
+                      <span class="initial-2">N</span></span></div>
+                 </div>
+                 <div class="names-section">
+                    <div class="names-accent-top-left"></div>
+                    <div class="names-accent-top-right"></div>
+                    <div class="names-accent-bottom-left"></div>
+                    <div class="names-accent-bottom-right"></div>
+                    <div class="name-section-left">
+                       <h2 class="partner-1-name"><span class="first-name"><span class="first-initial">A</span><span class="full-first-name">nna-lisa</span>
+                      </span><span class="last-name"><span class="last-initial"> P</span><span class="full-last-name">ettersson</span></span></h2>
+                    </div>
+                    <div class="name-section-middle">
+                       <div class="content">
+                          <h1 class="name-1"><span class="first-name "><span class="first-initial">A</span><span class="full-first-name">nna-lisa</span></span>
+                            <span class="last-name"><span class="last-initial"> P</span><span class="full-last-name">ettersson</span></span></h1>
+                          <span class="amp">&amp;</span><span class="and">och</span><span class="plus">+</span>
+                          <h1 class="name-2"><span class="first-name"><span class="first-initial">G</span><span class="full-first-name">ustav</span></span>
+                            <span class="last-name"><span class="last-initial"> N</span><span class="full-last-name">ordal</span></span></h1>
+                       </div>
+                    </div>
+                    <div class="name-section-right">
+                       <h2 class="partner-2-name"><span class="first-name"><span class="first-initial">C</span><span class="full-first-name">ustav</span>
+                      </span><span class="last-name"><span class="last-initial"> N</span><span class="full-last-name">ordal</span></span></h2>
+                    </div>
+                 </div>
+                 <div class="wedding-info-section">
+                    <div class="horizontal">
+                       <div class="hashtag">
+                          <h4>#CharlieTakesTheKate</h4>
+                       </div>
+                       <div class="content">
+                          <div class="location">
+                             <h4 class="in">var?</h4>
+                             <h3><span class="city">Alunda Kyrka</span>
+                              <!-- <span class="comma">, </span><span class="state">CA</span> -->
+                            </h3>
+                          </div>
+                          <div class="date">
+                             <span>
+                                <h4 class="on">när</h4>
+                                <h3><span class="month">June</span><span class="day">8</span><span class="year">2019</span></h3>
+                             </span>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="vertical-single">
+                       <div class="name-1 hidden-xs">
+                          <div class="initials">
+                             <span class="initial-1">K</span>
+                             <div class="accent"></div>
+                             <span class="initial-2">M</span>
+                          </div>
+                       </div>
+                       <div class="info-section">
+                          <div class="content">
+                             <div class="hashtag">
+                                <h4>#CharlieTakesTheKate</h4>
+                             </div>
+                             <div class="date-wrapper">
+                                <h3 class="date">
+                                   <div class="month"><span class="numeric">6</span><span class="word">June</span></div>
+                                   <span class="day">8</span>
+                                   <div class="year"><span class="full">2019</span><span class="minimal">19</span></div>
+                                </h3>
+                             </div>
+                             <h4 class="location">San Francisco, CA</h4>
+                          </div>
+                       </div>
+                       <div class="name-2 hidden-xs">
+                          <div class="initials">
+                             <span class="initial-1">C</span>
+                             <div class="accent"></div>
+                             <span class="initial-2">L</span>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="vertical-double">
+                       <div class="wedding-info-column wedding-info-left">
+                          <h4 class="location">San Francisco, CA</h4>
+                          <span class="big-initial">K</span>
+                          <h4 class="and">and</h4>
+                          <span class="big-initial">C</span>
+                          <h4 class="hashtag">#CharlieTakesTheKate</h4>
+                       </div>
+                       <div class="wedding-info-column wedding-info-right">
+                          <h4 class="day-month">Saturday</h4>
+                          <span class="big-initial day">6</span>
+                          <h4>/</h4>
+                          <span class="big-initial month">8</span>
+                          <h4>2019</h4>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="entity-sections homepage-sections clearfix">
+                    <div class="entity-section homepage-section clearfix">
+                       <div class="entity-section-title homepage-section-title">
+                          <h2 class="section-title">How We Met</h2>
+                          <h4 class="section-subtitle">4.23.14</h4>
+                       </div>
+                       <div class="entity-section-description homepage-section-description-v2">
+                          <p>We met at a classmate’s party and didn’t think much of it. Then a bunch of us went to karaoke after a long day of back-to-back classes and we both picked, “I’d Do Anything for Love.” And it just clicked. He went low, I went high. There were fist pumps. We harmonized by accident. That’s pretty much when we thought, “Okay. This could be something.”</p>
+                       </div>
+                       <div class="section-accent"></div>
+                    </div>
+                    <div class="entity-section homepage-section clearfix">
+                       <div class="entity-section-title homepage-section-title">
+                          <h2 class="section-title">The Proposal</h2>
+                          <h4 class="section-subtitle">4.23.17</h4>
+                       </div>
+                       <div class="entity-section-description homepage-section-description-v2">
+                          <p>On the anniversary of when we first met, we went back to our old stomping grounds to do karaoke with friends. When "I'd Do Anything for Love" came on, we ran up to the front. When the music suddenly died down, I looked over and he was down on one knee. I screamed, shouted "YES," and we were engaged.
+                             We're so excited to celebrate this next chapter in our lives with you.
+                             See you in San Fran!
+                          </p>
+                       </div>
+                       <div class="section-accent"></div>
+                    </div>
+                 </div>
+                 <div class="homepage-seal bottom-seal">
+                    <div class="seal-section"><span class="name-1"><span class="initial-1">K</span><span class="initial-2">M</span></span><span><span class="amp">&amp;</span><span class="and">and</span><span class="plus">+</span></span><span class="name-2"><span class="initial-1">C</span><span class="initial-2">L</span></span></div>
+                 </div>
+              </div>
+              <!-- <span>
+                 <div class="bottom-section" style="background-image: url(&quot;https://images.zola.com/b0753dca-58dc-464f-ab36-da141ed57617?h=700&quot;);"></div>
+              </span> -->
+           </div>
+        </div>
+     </div>
+  </div>
+  <!-- <footer id="footer" class="home">
+     <div class="footer">
+        <div class="footer-accent-left"></div>
+        <div class="footer-accent-right"></div>
+        <div class="container">
+           <div class="made-with-love text-center visible-xs visible-sm">Made with love by Zola.</div>
+           <div class="footer-nav">
+              <div class="logo-wrapper">
+                 <div class="logo"></div>
+              </div>
+              <div class="nav-wrapper">
+                 <ul class="list-inline">
+                    <li><a href="/about" target="_blank" rel="noopener noreferrer">About Zola</a></li>
+                    <li><a href="https://help.zola.com/hc/categories/115000284811-For-Wedding-Guests" target="_blank" rel="noopener noreferrer">Guest Help</a></li>
+                    <li><a role="button">My Website</a></li>
+                    <li>1 (408) 657-ZOLA</li>
+                 </ul>
+                 <span class="text-muted tos"><span>© 2021 Zola, Inc. All rights reserved. </span><br class="visible-xs visible-sm visible-md"><span><a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> / </span><span><a href="/terms" target="_blank" rel="noopener noreferrer">Terms of Use</a></span><span class="hidden-xs"> / </span><br class="visible-xs"><span><a href="/webaccessibility" target="_self">Web Accessibility</a> / </span><span><a href="/privacy#CA-privacy-rights" target="_blank" rel="noopener noreferrer">Your CA Privacy Rights</a></span></span>
+              </div>
+           </div>
+           <div class="made-with-love pull-right hidden-xs hidden-sm">Made with love by Zola.</div>
+        </div>
+     </div>
+  </footer> -->
 </div>
 
+</body>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
-      
-  </body>
 </html>
