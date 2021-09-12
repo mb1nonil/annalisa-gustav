@@ -2,51 +2,28 @@
 
 <html>
   <head>
-    <title>Title of the document</title>
+    <title>Anna-lisa och Gustav ska gifta sig!</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
 
     <link rel="stylesheet" href="lib1.css">
     <link rel="stylesheet" href="lib2.css">
+    <link rel="stylesheet" href="styles.css">
+
   </head>
   
   <body>
 <div id="public-wrapper">
-  <div class="website-title__cart noMobile"></div>
-  <div>
-     <div style="padding-bottom: 91px;"></div>
-     <div class="sticky-nav sticky" style="transform: translateZ(0px); position: fixed; top: 0px; left: 0px; width: 1903px; z-index: 100;">
-        <header id="public-page-header" class="clearfix">
-           <div id="public-page-details" class="top-row hidden-xs hidden-sm isHidden">
-              <h5 class="wedding-date">June 8, 2022</h5>
-              <h5 class="wedding-location">Alunda</h5>
-              <h5 class="hashtag">#AnnalisaOchGustav2022</h5>
-           </div>
-           <div class="col-xs-12 website-title">
-              <h1 id="public-page-title" class="hidden visible-md visible-lg isHidden"><a href="/wedding/sample-woads-white">Anna-lisa &amp; Gustav</a></h1>
-              <div class="visible-sm visible-xs">
-                 <div class="nav-control zolaicon-public zolaicon-public-hamburger-menu" role="button"></div>
-              </div>
-              <div class="pages-nav-container ">
-                 <div class="nav-container clearfix">
-                    <ul class="list-inline">
-                       <li><a href="/wedding/sample-woads-white" class="active">Home</a></li>
-                       <li><a href="/wedding/sample-woads-white/event">Schedule</a></li>
-                       <li><a href="/wedding/sample-woads-white/travel">Travel &amp; Accommodations</a></li>
-                       <li><a href="/wedding/sample-woads-white/registry">Registry</a></li>
-                       <li><a href="/wedding/sample-woads-white/wedding_party">Wedding Party</a></li>
-                       <li><a href="/wedding/sample-woads-white/photo">Photos</a></li>
-                       <li><a href="/wedding/sample-woads-white/poi">Things To Do</a></li>
-                       <li><a href="/wedding/sample-woads-white/faq">FAQs</a></li>
-                       <li><a href="/wedding/sample-woads-white/rsvp">RSVP</a></li>
-                    </ul>
-                 </div>
-              </div>
-              <h1 class="hidden visible-xs visible-sm"><a href="/wedding/sample-woads-white">Anna-lisa &amp; Gustav</a></h1>
-              <div class="website-title__cart hidden-md hidden-lg"></div>
-           </div>
-        </header>
-     </div>
-  </div>
+
+   
+  
   <div id="public-page-content-wrapper" class="show-page">
+     
      <div>
         <div class="public-page offset-background-image">
            <div>
@@ -59,10 +36,10 @@
                     <div class="homepage-header-text">
                        <h1>Vi ska gifta oss!</h1>
                     </div>
-                    <div class="down-arrow"><i class="zolaicon-public zolaicon-public-chevron-down" role="button"></i></div>
+                    <div class="down-arrow"><span id="scroll-btn-js" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></div>
                  </div>
               </div>
-              <div class="page-content has-entities no-image-above has-welcome-message">
+              <div class="page-content has-entities no-image-above has-welcome-message" id="scroll-target-js">
                  <div class="page-accent-top-left"></div>
                  <div class="page-accent-top-right"></div>
                  <div class="page-accent-bottom-left"></div>
@@ -98,7 +75,7 @@
                  <div class="wedding-info-section">
                     <div class="horizontal">
                        <div class="hashtag">
-                          <h4>#CharlieTakesTheKate</h4>
+                          <h4>#annalisaochgustav2022</h4>
                        </div>
                        <div class="content">
                           <div class="location">
@@ -110,7 +87,7 @@
                           <div class="date">
                              <span>
                                 <h4 class="on">när</h4>
-                                <h3><span class="month">June</span><span class="day">8</span><span class="year">2019</span></h3>
+                                <h3><span class="month">juli</span><span class="day">2</span><span class="year">2022</span></h3>
                              </span>
                           </div>
                        </div>
@@ -126,7 +103,7 @@
                        <div class="info-section">
                           <div class="content">
                              <div class="hashtag">
-                                <h4>#CharlieTakesTheKate</h4>
+                                <h4>#annalisaochgustav2022</h4>
                              </div>
                              <div class="date-wrapper">
                                 <h3 class="date">
@@ -135,7 +112,7 @@
                                    <div class="year"><span class="full">2019</span><span class="minimal">19</span></div>
                                 </h3>
                              </div>
-                             <h4 class="location">San Francisco, CA</h4>
+                             <h4 class="location">Alunda</h4>
                           </div>
                        </div>
                        <div class="name-2 hidden-xs">
@@ -148,34 +125,47 @@
                     </div>
                     <div class="vertical-double">
                        <div class="wedding-info-column wedding-info-left">
-                          <h4 class="location">San Francisco, CA</h4>
-                          <span class="big-initial">K</span>
-                          <h4 class="and">and</h4>
-                          <span class="big-initial">C</span>
-                          <h4 class="hashtag">#CharlieTakesTheKate</h4>
+                          <h4 class="location">Alunda</h4>
+                          <span class="big-initial">AL</span>
+                          <h4 class="and">och</h4>
+                          <span class="big-initial">G</span>
+                          <h4 class="hashtag">#annalisaochgustav2022</h4>
                        </div>
                        <div class="wedding-info-column wedding-info-right">
                           <h4 class="day-month">Saturday</h4>
-                          <span class="big-initial day">6</span>
+                          <span class="big-initial day">7</span>
                           <h4>/</h4>
-                          <span class="big-initial month">8</span>
-                          <h4>2019</h4>
+                          <span class="big-initial month">2</span>
+                          <h4>2022</h4>
                        </div>
                     </div>
                  </div>
                  <div class="entity-sections homepage-sections clearfix">
                     <div class="entity-section homepage-section clearfix">
-                       <div class="entity-section-title homepage-section-title">
-                          <h2 class="section-title">How We Met</h2>
-                          <h4 class="section-subtitle">4.23.14</h4>
-                       </div>
-                       <div class="entity-section-description homepage-section-description-v2">
-                          <p>We met at a classmate’s party and didn’t think much of it. Then a bunch of us went to karaoke after a long day of back-to-back classes and we both picked, “I’d Do Anything for Love.” And it just clicked. He went low, I went high. There were fist pumps. We harmonized by accident. That’s pretty much when we thought, “Okay. This could be something.”</p>
-                       </div>
-                       <div class="section-accent"></div>
+                     
+
+                     <form id=osaform>
+                        <h2>OSA</h2>
+                        <p>Ni kan även skicka svar direkt till gustav_nordal@hotmail.com</p>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Ditt namn</label>
+                          <input type="text" class="form-control" id="osaname" placeholder="Namn" required>
+                        </div>
+                        <div class="form-group">
+                           <label for="exampleInputEmail1">Meddelande</label>
+
+                           <textarea required class="form-control"  id="osamessage"  rows="3" placeholder="Ange om du kommer och vilka du tar med"></textarea>
+                           <span id="helpBlock" class="help-block">Ange om du kommer. <br> Ange hur många som kommer.  <br>Ange om du behöver hjälp med övernattning.  <br>
+                              Ange speciella önskemål om kost eller någon annan viktig information.</span>
+                        </div>
+                        <button type="submit" class="btn btn-default" id="osabtn">Skicka svar</button>
+                      </form>
+
+
+
                     </div>
                     <div class="entity-section homepage-section clearfix">
-                       <div class="entity-section-title homepage-section-title">
+                       <!-- <div class="entity-section-title homepage-section-title">
                           <h2 class="section-title">The Proposal</h2>
                           <h4 class="section-subtitle">4.23.17</h4>
                        </div>
@@ -185,7 +175,7 @@
                              See you in San Fran!
                           </p>
                        </div>
-                       <div class="section-accent"></div>
+                       <div class="section-accent"></div> -->
                     </div>
                  </div>
                  <div class="homepage-seal bottom-seal">
@@ -214,7 +204,7 @@
                     <li><a href="/about" target="_blank" rel="noopener noreferrer">About Zola</a></li>
                     <li><a href="https://help.zola.com/hc/categories/115000284811-For-Wedding-Guests" target="_blank" rel="noopener noreferrer">Guest Help</a></li>
                     <li><a role="button">My Website</a></li>
-                    <li>1 (408) 657-ZOLA</li>
+                    <li>1 (408) 657-ZOLA</li> 
                  </ul>
                  <span class="text-muted tos"><span>© 2021 Zola, Inc. All rights reserved. </span><br class="visible-xs visible-sm visible-md"><span><a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> / </span><span><a href="/terms" target="_blank" rel="noopener noreferrer">Terms of Use</a></span><span class="hidden-xs"> / </span><br class="visible-xs"><span><a href="/webaccessibility" target="_self">Web Accessibility</a> / </span><span><a href="/privacy#CA-privacy-rights" target="_blank" rel="noopener noreferrer">Your CA Privacy Rights</a></span></span>
               </div>
@@ -224,6 +214,12 @@
      </div>
   </footer> -->
 </div>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script src="index.js"></script>
+
 
 </body>
 
