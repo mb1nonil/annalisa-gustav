@@ -24,7 +24,7 @@ body {
 .icon-list li::before {
   display: block;
   flex-shrink: 0;
-  width: 1.5em;
+  width: 1.5em; 
   height: 1.5em;
   margin-right: .5rem;
   content: "";
@@ -40,3 +40,8 @@ body {
 #scroll-btn-js {
   cursor: pointer;
 }
+
+/* #public-wrapper .homepage-sections .homepage-section {
+  width: 100%;
+  margin: auto;
+} */
