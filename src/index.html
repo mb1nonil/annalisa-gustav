@@ -156,21 +156,21 @@
                     <div class="entity-section homepage-section clearfix">
                      
 
-                     <form id=osaform>
+                     <form id=osaform action="https://formspree.io/f/mgerdbgo" method="POST">
                         <h2>O.S.A.</h2>
 <p>                          
 Det går bra att svara på inbjudan till bröllopet här på hemsidan eller via telefon. 
-<br>Berätta gärna om ev allergier, vill ha hjälp med boendet eller annat som vi behöver veta.
+<br>Berätta gärna om ev allergier, om du vill ha hjälp med boendet eller annat som vi behöver veta.
 <br>Ange även hur många som kommer.
                         </p>
                         <div class="form-group">
                           <label for="exampleInputEmail1">Ditt namn</label>
-                          <input type="text" class="form-control" id="osaname" placeholder="Namn" required>
+                          <input type="text" class="form-control" id="osaname" placeholder="Namn" required name="namn">
                         </div>
                         <div class="form-group">
                            <label for="exampleInputEmail1">Meddelande</label>
 
-                           <textarea required class="form-control"  id="osamessage"  rows="3" placeholder="Lämna ett meddelande"></textarea>
+                           <textarea required class="form-control"  id="osamessage" name="meddelande"  rows="3" placeholder="Lämna ett meddelande"></textarea>
                            <!-- <span id="helpBlock" class="help-block">
                               Vänligen
                               
@@ -178,7 +178,7 @@ Det går bra att svara på inbjudan till bröllopet här på hemsidan eller via 
                               Ange speciella önskemål om kost eller någon annan viktig information.</span> -->
                         </div>
                         <button type="submit" class="btn btn-default" id="osabtn">Skicka svar</button>
-                      </form>
+                      </form> 
 
 
 

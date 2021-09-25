@@ -7,37 +7,25 @@ $("#scroll-btn-js").click(function() {
     }, 2000);
 });
 
-$("#osaform").on("submit", function(e){
-e.preventDefault();
-
-$("#osabtn").attr("disabled", true).text("Skickar...");
-
-console.log({
-    name: $("#osaname").val(),
-    email: "mb1nonil@hotmail.com",
-    subject: "OSA från bröllopssidan",
-    message: $("#osamessage").val()
+var form = document.getElementById("osaform");
     
-    });
-$.ajax({
-url:"https://functionapp120210912175231.azurewebsites.net/api/Function1?code=yFoxpKubjXvGZRB5iwq/evSlXR30W6cSXaaDOu3s2Fiq7itgeFyzaA==",
-data: JSON.stringify({
-name: $("#osaname").val(),
-email: "mb1nonil@hotmail.com",
-subject: "OSA från bröllopssidan",
-message: $("#osamessage").val()
+async function handleSubmit(event) {
+  event.preventDefault();
+  $("#osabtn").attr("disabled", true).text("Skickar...");
 
-}),
-method:"POST",
-success: function(){
+
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+        'Accept': 'application/json'
+    }
+  }).then(response => {
     $("#osaform").html("<h3>Tack, ditt meddelande har skickats</h3>");
 
-},
-error: function(){
-
+  }).catch(error => {
     $("#osaform").html("<h3>Tyvärr blev det något fel när ditt meddelande skickades, försök igen senare eller skicka direkt till gustav_nordal@hotmail.com</h3>");
-
+  });
 }
-
-})
-})
+form.addEventListener("submit", handleSubmit)
