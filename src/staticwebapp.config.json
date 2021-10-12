@@ -1,8 +1,12 @@
 {
     "routes": [
       {
-        "route": "/annan",
-        "rewrite" :"annan.html"
+        "route": "/info",
+        "rewrite" :"info.html"
+      },
+      {
+        "route": "/folje",
+        "rewrite" :"folje.html"
       }
     ]
   }
