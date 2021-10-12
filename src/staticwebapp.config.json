@@ -1,7 +1,8 @@
 {
     "routes": [
       {
-        "route": "/annan"
+        "route": "/annan",
+        "rewrite" :"annan.html"
       }
     ]
   }
