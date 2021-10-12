@@ -1,6 +1,5 @@
 
 
-
 $("#scroll-btn-js").click(function() {
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#scroll-target-js").offset().top
