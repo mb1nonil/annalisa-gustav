@@ -344,11 +344,8 @@ th {
     border: 1px solid #ddd !important;
   }
 }
-@font-face {
-  font-family: "Glyphicons Halflings";
-  src: url("../../../node_modules/bootstrap/fonts/glyphicons-halflings-regular.eot");
-  src: url("../../../node_modules/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../../../node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../../../node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff") format("woff"), url("../../../node_modules/bootstrap/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../../../node_modules/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
-}
+
+
 .glyphicon {
   position: relative;
   top: 1px;
@@ -362,7 +359,7 @@ th {
 }
 .glyphicon-asterisk:before {
   content: "\002a";
-}
+} 
 .glyphicon-plus:before {
   content: "\002b";
 }
@@ -9389,8 +9386,7 @@ label.checkbox-inline.no-label > .input-override {
 }
 @font-face {
   font-family: 'zolaicons';
-  src: url('../../assets/fonts/zolaicons.eot?24613844');
-  src: url('../../assets/fonts/zolaicons.eot?24613844#iefix') format('embedded-opentype'), url('../../assets/fonts/zolaicons.woff2?24613844') format('woff2'), url('../../assets/fonts/zolaicons.woff?24613844') format('woff'), url('../../assets/fonts/zolaicons.ttf?24613844') format('truetype'), url('../../assets/fonts/zolaicons.svg?24613844#zolaicons') format('svg');
+  src:  url('/assets/fonts/zola-theme-icons.woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -9950,8 +9946,7 @@ label.checkbox-inline.no-label > .input-override {
 /* '' */
 @font-face {
   font-family: 'zola-theme-icons';
-  src: url('../../assets/fonts/zola-theme-icons.eot?24613844');
-  src: url('../../assets/fonts/zola-theme-icons.eot?24613844#iefix') format('embedded-opentype'), url('../../assets/fonts/zola-theme-icons.woff2?24613844') format('woff2'), url('../../assets/fonts/zola-theme-icons.woff?24613844') format('woff'), url('../../assets/fonts/zola-theme-icons.ttf?24613844') format('truetype'), url('../../assets/fonts/zola-theme-icons.svg?24613844#zolaicons') format('svg');
+  src:  url('assets/fonts/zola-theme-icons.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
